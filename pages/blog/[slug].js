@@ -29,7 +29,6 @@ const BlogPost = ({ post }) => {
         <meta name="description" content={post.preview} />
       </Head>
       {data.showCursor && <Cursor />}
-
       <div
         className={`container mx-auto mt-10 ${
           data.showCursor && "cursor-none"
@@ -37,11 +36,13 @@ const BlogPost = ({ post }) => {
       >
         <Header isBlog={true} />
         <div className="mt-10 flex flex-col">
-          <img
-            className="w-full h-96 rounded-lg shadow-lg object-cover"
-            src={post.image}
-            alt={post.title}
-          ></img>
+          {post.image && post.image !== "placeholder" && (
+            <img
+              className="w-full h-96 rounded-lg shadow-lg object-cover"
+              src={post.image}
+              alt={post.title}
+            />
+          )}
           <h1
             ref={textOne}
             className="mt-10 text-4xl mob:text-2xl laptop:text-6xl text-bold"
@@ -65,7 +66,6 @@ const BlogPost = ({ post }) => {
           </Button>
         </div>
       )}
-
       {showEditor && (
         <BlogEditor
           post={post}
@@ -112,4 +112,6 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+
 export default BlogPost;
+
