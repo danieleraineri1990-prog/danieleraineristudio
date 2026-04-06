@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white font-mono text-black p-10">
+    <div className="min-h-screen bg-white font-mono text-black p-10"> 
       <Head><title>DANIELE RAINERI STUDIO</title></Head>
       <div className="max-w-4xl mx-auto">
         <h1 className="text-sm uppercase tracking-[0.3em] font-bold">DANIELE RAINERI STUDIO</h1>
