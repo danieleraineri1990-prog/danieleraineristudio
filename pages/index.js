@@ -19,10 +19,11 @@ export default function Home() {
       <div className="max-w-4xl mx-auto">
        <h1 
   ref={titleRef} 
-  className="sticky top-0 z-50 py-12 text-3xl uppercase tracking-[0.4em] font-bold bg-transparent pointer-events-none mix-blend-difference text-white"
+  className="sticky top-0 z-50 py-6 md:py-10 text-xs md:text-sm uppercase tracking-[0.3em] md:tracking-[0.4em] font-medium bg-transparent pointer-events-none mix-blend-difference text-white"
 >
   <span className="pointer-events-auto">DANIELE RAINERI STUDIO</span>
 </h1>
+
 
             {/* --- SEZIONE IMMAGINI --- */}
 <div className="mt-20 mb-40">
