@@ -20,28 +20,22 @@ export default function Home() {
 
 <div className="flex flex-col items-start w-full px-8 md:px-12 py-10">
   
- <>
+
+<>
   {/* TITOLO IN ALTO A SINISTRA */}
   <h1 
     ref={titleRef} 
-    className="sticky top-0 z-50 py-4 text-xl md:text-2xl uppercase tracking-[0.05em] font-bold font-sans bg-transparent pointer-events-none mix-blend-difference text-white whitespace-nowrap -ml-8 md:-ml-10"
+    className="sticky top-0 z-50 py-4 text-xl md:text-2xl uppercase tracking-[0.1em] [word-spacing:-0.2em] font-light bg-transparent pointer-events-none mix-blend-difference text-white whitespace-nowrap -ml-8 md:-ml-10"
   >
     <span className="pointer-events-auto">DANIELE RAINERI STUDIO</span>
   </h1>
 
   {/* SERIE IN BASSO A DESTRA */}
-  <div className="fixed bottom-10 right-5 md:right-10 z-50 uppercase text-xs md:text-sm tracking-[0.1em] font-bold font-sans mix-blend-difference text-white pointer-events-none">
+  <div className="fixed bottom-10 right-5 md:right-10 z-50 uppercase text-xs md:text-sm tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none">
     <span className="pointer-events-auto">SERIES: INTRECCI</span>
   </div>
 </>
 
-  {/* INFO SOTTO L'IMMAGINE (scorre anche questo) */}
-  <div className="mt-8 self-center w-full max-w-xl text-left font-serif text-sm">
-    <p className="italic">INTRECCIO NO.3 — Oil on canvas</p>
-    <p>150x200x4 — 2026</p>
-  </div>
-
-</div>
 
 
 
