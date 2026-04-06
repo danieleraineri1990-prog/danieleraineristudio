@@ -17,12 +17,22 @@ export default function Home() {
     <div className="min-h-screen bg-white text-black p-10">
       <Head><title>DANIELE RAINERI STUDIO</title></Head>
       <div className="max-w-4xl mx-auto">
-<h1 
-  ref={titleRef} 
-  className="sticky top-0 z-50 py-4 text-xl md:text-2xl uppercase tracking-[0.1em] font-light bg-transparent pointer-events-none mix-blend-difference text-white whitespace-nowrap -ml-8 md:-ml-10"
->
-  <span className="pointer-events-auto">DANIELE RAINERI STUDIO</span>
-</h1>
+
+<>
+  {/* TITOLO IN ALTO A SINISTRA */}
+  <h1 
+    ref={titleRef} 
+    className="sticky top-0 z-50 py-4 text-xl md:text-2xl uppercase tracking-[0.1em] [word-spacing:-0.2em] font-light bg-transparent pointer-events-none mix-blend-difference text-white whitespace-nowrap -ml-8 md:-ml-10"
+  >
+    <span className="pointer-events-auto">DANIELE RAINERI STUDIO</span>
+  </h1>
+
+  {/* SERIE IN BASSO A DESTRA */}
+  <div className="fixed bottom-10 right-5 md:right-10 z-50 uppercase text-xs md:text-sm tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none">
+    <span className="pointer-events-auto">SERIES: INTRECCI</span>
+  </div>
+</>
+
 
 
 
