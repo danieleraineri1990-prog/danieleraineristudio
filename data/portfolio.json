@@ -1,10 +1,25 @@
 {
   "name": "DANIELE RAINERI STUDIO",
-  "headerTaglineTwo": "Avanza una ricerca in pittura che indaga cos’è un corpo quando la sua identita ha smesso di reggere.",
+  "headerTaglineTwo": "Avanza una ricerca in pittura che indaga cos'è un corpo quando la sua identita ha smesso di reggere.",
   "headerTaglineThree": "Dal vegetale, con innesti e ramificazioni, si identifica un senso del ricrescere.",
   "headerTaglineFour": "A volte la sua pittura ricorda degli abbracci.",
+  "showResume": false,
+  "showCursor": false,
   "soloShows": [
-    "Afnakafna gallery 2019 - Moongloow - Roma",
-    "Le nicchie gallery 2021 - Taranto"
-  ]
+    "Afnakafna gallery 2019 – Moongloow – Roma",
+    "Le nicchie gallery 2021 – Taranto"
+  ],
+  "resume": {
+    "tagline": "",
+    "description": "",
+    "experiences": [],
+    "education": {
+      "universityName": "",
+      "universityDate": "",
+      "universityPara": ""
+    },
+    "languages": [],
+    "frameworks": [],
+    "others": []
+  }
 }
