@@ -1,3 +1,4 @@
+
 {
   "name": "DANIELE RAINERI STUDIO",
   "headerTaglineOne": "DANIELE RAINERI STUDIO",
@@ -5,11 +6,26 @@
   "headerTaglineThree": "Dal vegetale, con innesti e ramificazioni, si identifica un senso del ricrescere.",
   "headerTaglineFour": "A volte la sua pittura ricorda degli abbracci.",
   "showCursor": false,
-  "darkMode": false,
-  "socials": [],
+  "footer": true,
+  "darkMode":  false,
+  "socials": [
+    {
+      "id": "1",
+      "title": "Instagram",
+      "link": "https://instagram.com/"
+    }
+  ],
   "resume": {
     "description": "",
     "experiences": []
   },
-  "projects": []
+  "projects": [
+    {
+      "id": "1",
+      "title": "Series: Intrecci",
+      "description": "Pittura di ricerca",
+      "imageSrc": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5",
+      "url": "#"
+    }
+  ]
 }
