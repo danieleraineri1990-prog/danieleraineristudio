@@ -19,21 +19,24 @@ export default function Home() {
       <div className="max-w-4xl mx-auto">
 
 <>
-  {/* TITOLO IN ALTO - ATTACCATO A SINISTRA E AL BORDO SUPERIORE */}
+  {/* TITOLO IN ALTO - COMPLETAMENTE A SINISTRA, SOTTILE, NO SFONDO */}
   <h1 
     ref={titleRef} 
-    className="sticky top-0 z-50 p-4 text-xl md:text-2xl uppercase font-bold bg-white text-black text-left w-full"
+    className="sticky top-0 z-50 pt-6 pb-2 text-[18px] md:text-[22px] uppercase font-light text-black bg-transparent w-full flex justify-start pl-6 md:pl-10 pointer-events-none tracking-tight"
+    style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
   >
     <span className="pointer-events-auto leading-none">DANIELE RAINERI STUDIO</span>
   </h1>
 
-  {/* SERIE IN BASSO - ATTACCATO A DESTRA E AL BORDO INFERIORE */}
+  {/* TITOLO IN BASSO - STESSA GRANDEZZA, SOTTILE, A DESTRA */}
   <div 
-    className="fixed bottom-0 right-0 z-50 p-4 uppercase text-xl md:text-2xl font-bold text-black pointer-events-none bg-white/50"
+    className="fixed bottom-10 right-6 md:right-12 z-50 uppercase text-[18px] md:text-[22px] font-light text-black pointer-events-none tracking-tight"
+    style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
   >
     <span className="pointer-events-auto leading-none">SERIES: INTRECCI</span>
   </div>
 </>
+
 
 
 
