@@ -34,7 +34,7 @@ export default function Home() {
   <div className="fixed bottom-10 right-5 md:right-10 z-50 uppercase text-xs md:text-sm tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none">
     <span className="pointer-events-auto">SERIES: INTRECCI</span>
   </div>
-</>
+</div>
 
 
 
