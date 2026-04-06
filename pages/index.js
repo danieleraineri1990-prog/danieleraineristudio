@@ -13,50 +13,44 @@ export default function Home() {
     );
   }, []);
 
-  return (
+    return (
     <div className="min-h-screen bg-white text-black p-10">
-      <Head><title>DANIELE RAINERI STUDIO</title></Head>
+      <Head>
+        <title>DANIELE RAINERI STUDIO</title>
+      </Head>
+      
       <div className="max-w-4xl mx-auto">
+        <div className="flex flex-col items-start w-full px-8 md:px-12 py-10">
 
-<div className="flex flex-col items-start w-full px-8 md:px-12 py-10">
-  
+          {/* TITOLO IN ALTO A SINISTRA */}
+          <h1 
+            ref={titleRef} 
+            className="sticky top-0 z-50 py-4 text-xl md:text-2xl uppercase tracking-[0.1em] [word-spacing:-0.2em] font-light bg-transparent pointer-events-none mix-blend-difference text-white whitespace-nowrap -ml-8 md:-ml-12"
+          >
+            <span className="pointer-events-auto">DANIELE RAINERI STUDIO</span>
+          </h1>
 
+          {/* SERIE IN BASSO A DESTRA */}
+          <div className="fixed bottom-10 right-5 md:right-10 z-50 uppercase text-xs md:text-sm tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none">
+            <span className="pointer-events-auto">SERIES: INTRECCI</span>
+          </div>
 
-<>
-  {/* TITOLO IN ALTO A SINISTRA */}
-  <h1 
-    ref={titleRef} 
-    className="sticky top-0 z-50 py-4 text-xl md:text-2xl uppercase tracking-[0.1em] [word-spacing:-0.2em] font-light bg-transparent pointer-events-none mix-blend-difference text-white whitespace-nowrap -ml-8 md:-ml-10"
-  >
-    <span className="pointer-events-auto">DANIELE RAINERI STUDIO</span>
-  </h1>
+                    {/* SEZIONE IMMAGINI */}
+          <div className="mt-20 mb-40">
+            <img
+              src="/images/1.JPG"
+              alt="INTRECCIO NO.3"
+              className="w-full h-auto"
+            />
+            <div className="mt-6">
+              <p className="font-mono text-[13px] leading-relaxed italic text-black">
+                INTRECCIO NO.3 - Oil on canvas 150x200x4 - 2026
+              </p>
+            </div>
+          </div>
 
-  {/* SERIE IN BASSO A DESTRA */}
-  <div className="fixed bottom-10 right-5 md:right-10 z-50 uppercase text-xs md:text-sm tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none">
-    <span className="pointer-events-auto">SERIES: INTRECCI</span>
-  </div>
-</>
+         
 
-
-
-
-
-
-
-
-            {/* --- SEZIONE IMMAGINI --- */}
-<div className="mt-20 mb-40">
-  <img 
-    src="/images/1.JPG" 
-    alt="INTRECCIO NO.3" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-6">
-    <p className="font-mono text-[13px] leading-relaxed italic text-black">
-      INTRECCIO NO.3 — Oil on canvas 150x200x4 — 2026
-    </p>
-  </div>
-</div>
 
        {/* --- SECONDA OPERA (INTRECCIO NO.8) --- */}
         <div className="mt-40 mb-40">
