@@ -9,30 +9,29 @@ export default function Home() {
       </Head>
 
       <div className="max-w-4xl">
-        {/* Titolo più piccolo e meno pesante */}
-        <h1 className="text-xl font-mono mt-5 uppercase tracking-widest">
+        <h1 className="text-sm font-mono mt-5 uppercase tracking-[0.3em] font-bold">
           {data.name}
         </h1>
         
-        {/* Testo descrittivo rimpicciolito (text-base) */}
-        <div className="mt-10 font-mono text-base leading-relaxed max-w-2xl text-gray-800">
+        <div className="mt-12 font-mono text-[13px] leading-relaxed max-w-xl text-gray-800">
           <p className="mb-4">{data.headerTaglineTwo}</p>
           <p className="mb-4">{data.headerTaglineThree}</p>
           <p className="mb-10">{data.headerTaglineFour}</p>
         </div>
 
-        <div className="mt-20">
-          <h2 className="font-mono text-sm uppercase tracking-widest border-b pb-2 text-gray-500">Solo Shows</h2>
-          <div className="mt-5 font-mono text-sm text-gray-700">
+        <div className="mt-24">
+          <h2 className="font-mono text-[11px] uppercase tracking-widest border-b pb-2 text-gray-400">Solo Shows</h2>
+          <div className="mt-5 font-mono text-[12px] text-gray-600">
             <p>Afnakafna gallery 2019 - Moongloow - Roma</p>
             <p className="mt-2">Le nicchie gallery 2021 - Taranto</p>
           </div>
         </div>
 
-        <div className="mt-24 border-t pt-10">
-           <p className="font-mono text-sm uppercase tracking-widest text-gray-400">SERIES: INTRECCI</p>
+        <div className="mt-32 border-t pt-10">
+           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-gray-400">SERIES: INTRECCI</p>
         </div>
       </div>
     </div>
   );
 }
+
