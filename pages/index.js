@@ -25,7 +25,7 @@ export default function Home() {
         </h1>
 
         <div className="mt-12 text-[13px] leading-relaxed max-w-xl italic">
-          <p className="mb-4">Avanza una ricerca in pittura che indaga cos'è un corpo quando la sua identita ha smesso di reggere.</p>
+          <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
           <p className="mb-4">Dal vegetale, con innesti e ramificazioni, si identifica un senso del ricrescere.</p>
           <p className="mb-10">A volte la sua pittura ricorda degli abbracci.</p>
         </div>
@@ -55,3 +55,4 @@ export default function Home() {
     </div>
   );
 }
+
