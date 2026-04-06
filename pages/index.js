@@ -17,25 +17,12 @@ export default function Home() {
     <div className="min-h-screen bg-white text-black p-10">
       <Head><title>DANIELE RAINERI STUDIO</title></Head>
       <div className="max-w-4xl mx-auto">
-
-<>
-  {/* TITOLO IN ALTO - ATTACCATO A SINISTRA E AL BORDO SUPERIORE */}
-  <h1 
-    ref={titleRef} 
-    className="sticky top-0 z-50 p-4 text-xl md:text-2xl uppercase font-bold bg-white text-black text-left w-full"
-  >
-    <span className="pointer-events-auto leading-none">DANIELE RAINERI STUDIO</span>
-  </h1>
-
-  {/* SERIE IN BASSO - ATTACCATO A DESTRA E AL BORDO INFERIORE */}
-  <div 
-    className="fixed bottom-0 right-0 z-50 p-4 uppercase text-xl md:text-2xl font-bold text-black pointer-events-none bg-white/50"
-  >
-    <span className="pointer-events-auto leading-none">SERIES: INTRECCI</span>
-  </div>
-</>
-
-
+      <h1 
+  ref={titleRef} 
+  className="sticky top-0 z-50 py-4 text-xl md:text-2xl uppercase tracking-[0.1em] font-light bg-transparent pointer-events-none mix-blend-difference text-white whitespace-nowrap ml-[-5px]"
+>
+  <span className="pointer-events-auto">DANIELE RAINERI STUDIO</span>
+</h1>
 
 
 
