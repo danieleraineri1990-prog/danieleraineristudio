@@ -17,12 +17,13 @@ export default function Home() {
     <div className="min-h-screen bg-white text-black p-10">
       <Head><title>DANIELE RAINERI STUDIO</title></Head>
       <div className="max-w-4xl mx-auto">
-       <h1 
+      <h1 
   ref={titleRef} 
   className="sticky top-0 z-50 py-6 text-xl md:text-2xl uppercase tracking-tight font-bold bg-transparent pointer-events-none mix-blend-difference text-white whitespace-nowrap"
 >
   <span className="pointer-events-auto">DANIELE RAINERI STUDIO</span>
 </h1>
+
 
 
 
