@@ -21,6 +21,7 @@ export default function Home() {
 <div className="flex flex-col items-start w-full px-8 md:px-12 py-10">
   
 
+
 <>
   {/* TITOLO IN ALTO A SINISTRA */}
   <h1 
@@ -34,7 +35,8 @@ export default function Home() {
   <div className="fixed bottom-10 right-5 md:right-10 z-50 uppercase text-xs md:text-sm tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none">
     <span className="pointer-events-auto">SERIES: INTRECCI</span>
   </div>
-</div>
+</>
+
 
 
 
