@@ -23,6 +23,20 @@ export default function Home() {
         >
           DANIELE RAINERI STUDIO
         </h1>
+            {/* --- SEZIONE IMMAGINI --- */}
+<div className="mt-20 mb-40">
+  <img 
+    src="/images/1.JPG" 
+    alt="INTRECCIO NO.3" 
+    className="w-full h-auto" 
+  />
+  <div className="mt-6">
+    <p className="font-mono text-[13px] leading-relaxed italic text-black">
+      INTRECCIO NO.3 — Oil on canvas 150x200x4 — 2026
+    </p>
+  </div>
+</div>
+
 
         <div className="mt-12 text-[13px] leading-relaxed max-w-xl italic">
           <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
