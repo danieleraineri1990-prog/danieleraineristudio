@@ -20,26 +20,20 @@ export default function Home() {
 
 <div className="flex flex-col items-start w-full px-8 md:px-12 py-10">
   
-  {/* TITOLO: Ora è un elemento normale che scorre verso l'alto */}
-  <h1 className="mb-24 text-xl md:text-2xl uppercase tracking-[0.1em] font-normal text-black">
-    DANIELE RAINERI STUDIO
+ <>
+  {/* TITOLO IN ALTO A SINISTRA */}
+  <h1 
+    ref={titleRef} 
+    className="sticky top-0 z-50 py-4 text-xl md:text-2xl uppercase tracking-[0.05em] font-bold font-sans bg-transparent pointer-events-none mix-blend-difference text-white whitespace-nowrap -ml-8 md:-ml-10"
+  >
+    <span className="pointer-events-auto">DANIELE RAINERI STUDIO</span>
   </h1>
 
-  {/* CONTENITORE RELATIVO PER L'IMMAGINE */}
-  <div className="relative self-center group">
-    <img 
-      src="/tuo-percorso-immagine.jpg" 
-      alt="Opera" 
-      className="max-w-full h-auto shadow-2xl" 
-    />
-
-    {/* SERIE: Posizionata NELL'ANGOLO dell'immagine, scorre con essa */}
-    <div className="absolute bottom-4 right-4">
-      <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-black font-medium">
-        SERIES: INTRECCI
-      </span>
-    </div>
+  {/* SERIE IN BASSO A DESTRA */}
+  <div className="fixed bottom-10 right-5 md:right-10 z-50 uppercase text-xs md:text-sm tracking-[0.1em] font-bold font-sans mix-blend-difference text-white pointer-events-none">
+    <span className="pointer-events-auto">SERIES: INTRECCI</span>
   </div>
+</>
 
   {/* INFO SOTTO L'IMMAGINE (scorre anche questo) */}
   <div className="mt-8 self-center w-full max-w-xl text-left font-serif text-sm">
