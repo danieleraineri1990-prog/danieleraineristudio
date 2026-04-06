@@ -37,6 +37,20 @@ export default function Home() {
   </div>
 </div>
 
+       {/* --- SECONDA OPERA (INTRECCIO NO.8) --- */}
+        <div className="mt-40 mb-40">
+          <img 
+            src="/images/2.JPG" 
+            alt="INTRECCIO NO.8" 
+            className="w-full h-auto" 
+          />
+          <div className="mt-6">
+            <p className="font-mono text-[13px] leading-relaxed italic text-black">
+              INTRECCIO NO.8 — Oil on linen 100x150 — 2026
+            </p>
+          </div>
+        </div>
+
 
         <div className="mt-12 text-[13px] leading-relaxed max-w-xl italic">
           <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
