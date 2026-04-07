@@ -108,6 +108,18 @@ export default function Home() {
             </p>
           </div>
         </div>
+               <div className="mt-40 mb-40">
+          <img 
+            src="/images/66.JPG" 
+            alt="INTRECCIO NO.4" 
+            className="w-full h-auto" 
+          />
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
+              INTRECCIO NO.4 — Charcoal on linen 150x200
+            </p>
+          </div>
+        </div>
 
 
 
