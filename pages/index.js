@@ -97,7 +97,9 @@ export default function Home() {
       INTRECCIO 1 — Oil on linen 150x200
     </p>
   </div>
-</div>
+       </div>
+              <div className="mb-40">
+
 
 
         <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-700 font-light tracking-wide">
