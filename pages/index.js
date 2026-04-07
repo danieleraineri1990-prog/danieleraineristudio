@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
@@ -242,7 +243,7 @@ export default function Home() {
 </div>
       <div className="mt-20 mb-40">
   <img 
-    src="/images/22.jpg" 
+    src="/images/22.JPG" 
     alt="INTRECCIO NO.16" 
     className="w-full h-auto" 
   />
