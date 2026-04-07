@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
@@ -253,31 +252,6 @@ export default function Home() {
     </p>
   </div>
 </div>
-       <div className="mt-20 mb-40">
-  <img 
-    src="/images/10.jpg" 
-    alt="INTRECCIO NO.18" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-      INTRECCIO NO.18 — Oil 40x50
-    </p>
-  </div>
-</div>
-      <div className="mt-20 mb-40">
-  <img 
-    src="/images/18.jpg" 
-    alt="RAMIFICAZIONE NO.2" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-      RAMIFICAZIONE NO.2 — Oil 50X70
-    </p>
-  </div>
-</div>
-    
 
       
 
@@ -299,9 +273,8 @@ export default function Home() {
         <div className="mt-20">
           <h2 className="text-[10px] uppercase tracking-widest border-b pb-2 text-gray-700 font-light">Solo Shows</h2>
           <div className="mt-5 text-[11px] text-gray-700 font-light">
-            <p>2019Afnakafna gallery – Moongloow – Roma</p>
-            <p>2021 className="mt-2">Le nicchie gallery – Taranto</p>
-            <p>2025 Collaborazione temporanea Artra gallery Milan</p>
+            <p>Afnakafna gallery 2019 – Moongloow – Roma</p>
+            <p className="mt-2">Le nicchie gallery 2021 – Taranto</p>
           </div>
         </div>
 
