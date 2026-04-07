@@ -273,7 +273,7 @@ export default function Home() {
   />
   <div className="mt-4">
     <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-      RAMIFICAZIONE NO.2 — Oil 40x50
+      RAMIFICAZIONE NO.2 — Oil 50X70
     </p>
   </div>
 </div>
