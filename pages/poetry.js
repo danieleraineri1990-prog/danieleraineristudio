@@ -29,7 +29,7 @@ export default function Poetry() {
           </div>
 
           <div className="mt-32 opacity-40">
-            <p className="text-[10px] uppercase tracking-[0.2em] text-gray-700">
+            <p className="text-[10px] uppercase tracking-[0.2em] text-gray-900">
               7 aprile 2026 - di sera
             </p>
           </div>
