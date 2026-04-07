@@ -300,6 +300,7 @@ export default function Home() {
           <h2 className="text-[10px] uppercase tracking-widest border-b pb-2 text-gray-700 font-light">Solo Shows</h2>
           <div className="mt-5 text-[11px] text-gray-700 font-light">
             <p>Afnakafna gallery 2019 – Moongloow – Roma</p>
+            <p>2025 collaborazione temporanea Artra gallery Milan</p>
             <p className="mt-2">Le nicchie gallery 2021 – Taranto</p>
           </div>
         </div>
