@@ -34,7 +34,7 @@ export default function Poetry() {
           </div>
 
           {/* LINEA DIVISORIA */}
-          <hr className="my-32 border-0 h-[1px] bg-gray-200 w-20" />
+          <hr className="my-32 border-0 h-[1px] bg-gray-400 w-1/2" />
 
           {/* SECONDA POESIA */}
           <div className="max-w-md">
