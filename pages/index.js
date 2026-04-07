@@ -122,7 +122,7 @@ export default function Home() {
         </div>
                <div className="mt-40 mb-40">
           <img 
-            src="/images/9.JPG" 
+            src="/images/9.jpg" 
             alt="INTRECCIO NO.7" 
             className="w-full h-auto" 
           />
@@ -134,7 +134,7 @@ export default function Home() {
         </div>
               <div className="mt-40 mb-40">
           <img 
-            src="/images/8.JPG" 
+            src="/images/8.jpg" 
             alt="RAMIFICAZIONE NO.1" 
             className="w-full h-auto" 
           />
