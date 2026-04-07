@@ -26,7 +26,7 @@ export default function Home() {
     <span className="pointer-events-auto">DANIELE RAINERI STUDIO</span>
   </h1>
 
-  <div className="fixed bottom-10 right-0 z-50 uppercase text-base md:text-xl tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none">
+  <div className="fixed bottom-4 right-0 z-50 uppercase text-base md:text-xl tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none">
     <span className="pointer-events-auto">SERIES: INTRECCI</span>
   </div>
 </>
