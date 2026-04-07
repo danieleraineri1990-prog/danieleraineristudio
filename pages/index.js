@@ -67,7 +67,7 @@ export default function Home() {
             className="w-full h-auto" 
           />
           <div className="mt-6">
-            <p className="text-[12px] tracking-[0.1em] text-gray-800 font-normal italic">
+           <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
               INTRECCIO NO.30 — Oil 210x220
             </p>
           </div>
