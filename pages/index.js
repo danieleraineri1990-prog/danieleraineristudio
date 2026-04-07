@@ -28,7 +28,7 @@ export default function Home() {
   </h1>
 
   {/* SERIE IN BASSO A DESTRA */}
-  <div className="fixed bottom-10 right-5 md:right-0 z-50 uppercase text-base md:text-xl tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none text-right">
+  <div className="fixed bottom-10 md:right-0 z-50 uppercase text-base md:text-xl tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none text-right">
     <span className="pointer-events-auto">SERIES: INTRECCI</span>
   </div>
 </>
