@@ -16,6 +16,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black p-10">
       <Head><title>DANIELE RAINERI STUDIO</title></Head>
+    <meta name="google-site-verification" content="m6HHKQMHvSaU59B2WftQbjoKLC3qFuhA0cJGvdL7j2w" />
       <div className="max-w-4xl mx-auto">
 
 <>
