@@ -241,6 +241,20 @@ export default function Home() {
     </p>
   </div>
 </div>
+      <div className="mt-20 mb-40">
+  <img 
+    src="/images/22.JPG" 
+    alt="INTRECCIO NO.16" 
+    className="w-full h-auto" 
+  />
+  <div className="mt-4">
+    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
+      INTRECCIO NO.16 — Acrylic 120x160
+    </p>
+  </div>
+</div>
+
+      
 
 
         <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-700 font-light tracking-wide">
