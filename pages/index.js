@@ -38,7 +38,7 @@ export default function Home() {
     className="w-full h-auto" 
   />
   <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-500 font-light">
+    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
       INTRECCIO NO.3 — Oil 150x200
     </p>
   </div>
@@ -51,20 +51,40 @@ export default function Home() {
             className="w-full h-auto" 
           />
           <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-500 font-light">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
               INTRECCIO NO.8 — Oil 100x150
             </p>
           </div>
         </div>
 
-        <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-500 font-light tracking-wide">
+        <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-400 font-light tracking-wide">
           <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
           <p className="mb-4">Dal vegetale, con innesti e ramificazioni, si identifica un senso del ricrescere.</p>
           <p className="mb-10">A volte la sua pittura ricorda degli abbracci.</p>
         </div>
 
         <div className="mt-20">
-          <h2 className="text-[10px] uppercase tracking-widest border-b pb-2 text-gray-500 font-light">Premi</h2>
+          <h2 className="text-[10px] uppercase tracking-widest border-b pb-2 text-gray-300 font-light">Premi</h2>
           <div className="mt-5">
-            <p className="text-[11px] uppercase​​​​​​​​​​​​​​​​
+            <p className="text-[11px] uppercase tracking-widest text-gray-400 font-light">COLLECTIVE EXHIBITION</p>
+            <p className="text-[11px] text-gray-400 mt-2 font-light">Venice pavilion – Biennale The milk of dreams – Vincitore primo premio artefici del nostro tempo</p>
+          </div>
+        </div>
 
+        <div className="mt-20">
+          <h2 className="text-[10px] uppercase tracking-widest border-b pb-2 text-gray-300 font-light">Solo Shows</h2>
+          <div className="mt-5 text-[11px] text-gray-400 font-light">
+            <p>Afnakafna gallery 2019 – Moongloow – Roma</p>
+            <p className="mt-2">Le nicchie gallery 2021 – Taranto</p>
+          </div>
+        </div>
+
+        <div className="mt-24 border-t pt-10 text-[11px] text-gray-400 font-light">
+          <h2 className="text-[10px] uppercase tracking-widest text-gray-300 mb-4 font-light">Contact</h2>
+          <p>Email: danieleraineri1990@gmail.com</p>
+          <p className="mt-1">Instagram: @danieleraineristudio</p>
+        </div>
+      </div>
+    </div>
+  );
+}
