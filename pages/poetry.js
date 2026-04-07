@@ -20,20 +20,18 @@ export default function Poetry() {
         </header>
 
         <main className="mt-40 flex flex-col items-start">
-          {/* La tua nuova poesia: sottile, grigia e spaziosa */}
+          {/* Il verso: più piccolo, grigio scuro e sottilissimo */}
           <div className="max-w-md">
-            <p className="text-[13px] md:text-[15px] tracking-[0.25em] leading-[2.8] text-gray-700 font-extralight uppercase">
-              Scriverò una poesia <br />
-              ma non oggi forse domani <br />
-              buttando giù alcune righe <br />
-              mi ricorderò di te.
+            <p className="text-[13px] md:text-[15px] tracking-[0.25em] leading-[2.5] text-gray-700 font-extralight uppercase">
+              E forse pioggia, <br />
+              silenzio della sera.
             </p>
           </div>
 
-          {/* Data in piccolo in fondo */}
-          <div className="mt-32 opacity-40">
-            <p className="text-[10px] uppercase tracking-[0.2em] font-extralight text-gray-500">
-              7 aprile 26 - di sera
+          {/* Sottile linea di chiusura o dettaglio dopo molto spazio */}
+          <div className="mt-80 opacity-30">
+            <p className="text-[9px] uppercase tracking-[0.3em] font-extralight text-gray-500">
+              — raccolta
             </p>
           </div>
         </main>
