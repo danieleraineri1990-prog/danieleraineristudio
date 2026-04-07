@@ -1,6 +1,9 @@
 import Head from "next/head";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], weight: ["300", "400"] });
 
 export default function Home() {
   const titleRef = useRef(null);
@@ -14,14 +17,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-black p-10 font-sans">
+    <div className={`${inter.className} min-h-screen bg-white text-black p-10`}>
       <Head>
         <title>DANIELE RAINERI STUDIO</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet" />
       </Head>
-      <div className="max-w-4xl mx-auto" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <div className="max-w-4xl mx-auto">
 
         <>
           <h1
@@ -37,11 +37,7 @@ export default function Home() {
         </>
 
         <div className="mt-20 mb-40">
-          <img
-            src="/images/1.JPG"
-            alt="INTRECCIO NO.3"
-            className="w-full h-auto"
-          />
+          <img src="/images/1.JPG" alt="INTRECCIO NO.3" className="w-full h-auto" />
           <div className="mt-6">
             <p className="text-[12px] tracking-[0.15em] font-light text-black uppercase">
               INTRECCIO NO.3 — Oil on canvas 150x200x4 — 2026
@@ -50,11 +46,7 @@ export default function Home() {
         </div>
 
         <div className="mt-40 mb-40">
-          <img
-            src="/images/2.JPG"
-            alt="INTRECCIO NO.8"
-            className="w-full h-auto"
-          />
+          <img src="/images/2.JPG" alt="INTRECCIO NO.8" className="w-full h-auto" />
           <div className="mt-6">
             <p className="text-[12px] tracking-[0.15em] font-light text-black uppercase">
               INTRECCIO NO.8 — Oil on linen 100x150 — 2026
@@ -91,3 +83,4 @@ export default function Home() {
         </div>
 
       </div>
+
