@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   const titleRef = useRef(null);
-  const [isOpen, setIsOpen] = useState(false); // Stato per il menu a tendina
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     gsap.fromTo(
@@ -27,7 +27,7 @@ export default function Home() {
         {/* HEADER FISSO IN ALTO */}
         <header className="sticky top-0 z-50 py-4 flex items-center justify-between pointer-events-none -ml-8 md:-ml-10">
           
-          {/* Titolo - ORA NERO E VISIBILE */}
+          {/* Titolo NERO - visibile e sulla sinistra */}
           <h1 
             ref={titleRef} 
             className="text-xl md:text-2xl uppercase tracking-[0.1em] [word-spacing:-0.2em] font-light bg-transparent mix-blend-difference text-black whitespace-nowrap pointer-events-auto"
@@ -35,27 +35,27 @@ export default function Home() {
             <Link href="/">DANIELE RAINERI STUDIO</Link>
           </h1>
 
-          {/* Menu Hamburger Grigio A DESTRA SULLA STESSA LINEA */}
+          {/* Menu Hamburger Grigio - Sulla stessa linea a DESTRA */}
           <div 
             className="pointer-events-auto relative"
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
           >
-            {/* Le 3 Linee Grigie */}
+            {/* Le 3 Linee Grigie parallele al nome */}
             <button className="flex flex-col gap-1.5 py-4 pl-10 outline-none group">
               <div className="w-6 h-[1px] bg-gray-400 group-hover:bg-black transition-colors"></div>
               <div className="w-6 h-[1px] bg-gray-400 group-hover:bg-black transition-colors"></div>
               <div className="w-6 h-[1px] bg-gray-400 group-hover:bg-black transition-colors"></div>
             </button>
             
-            {/* Tendina che appare: Voci GRANDI e GRIGIO SCURO */}
+            {/* Voci Menu GRANDI, STAMPATELLO, GRIGIO SCURO */}
             {isOpen && (
-              <div className="absolute top-full right-0 mt-2 flex flex-col items-end space-y-4 pt-4 animate-in fade-in duration-300">
-                <Link href="/disegni" className="text-3xl uppercase tracking-[0.1em] font-light text-gray-700 hover:text-black transition-colors">
-                  disegni
+              <div className="absolute top-full right-0 mt-2 flex flex-col items-end space-y-2 pt-4 animate-in fade-in duration-300">
+                <Link href="/disegni" className="text-5xl md:text-7xl uppercase tracking-tighter font-light text-gray-700 hover:text-black transition-colors">
+                  DISEGNI
                 </Link>
-                <Link href="/poetry" className="text-3xl uppercase tracking-[0.1em] font-light text-gray-700 hover:text-black transition-colors">
-                  poetry
+                <Link href="/poetry" className="text-5xl md:text-7xl uppercase tracking-tighter font-light text-gray-700 hover:text-black transition-colors">
+                  POETRY
                 </Link>
               </div>
             )}
@@ -67,7 +67,7 @@ export default function Home() {
           <span className="pointer-events-auto">SERIES: INTRECCI</span>
         </div>
 
-        {/* TUTTE LE TUE OPERE (Corpo del testo originale, invariato) */}
+        {/* --- CORPO DEL SITO (TUTTE LE TUE OPERE) --- */}
         <div className="mt-20 mb-40">
           <img src="/images/1.JPG" alt="INTRECCIO NO.3" className="w-full h-auto" />
           <div className="mt-4">
@@ -194,7 +194,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Biografia, Premi, Mostre e Contatti (Tutto invariato) */}
+        {/* --- BIOGRAFIA E CONTATTI --- */}
         <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-700 font-light tracking-wide">
           <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
           <p className="mb-4">Dal vegetale, con innesti e ramificazioni, si identifica un senso del ricrescere.</p>
