@@ -26,13 +26,13 @@ export default function Poetry() {
           
           <div className="max-w-xl">
             <p className="text-xl md:text-2xl tracking-[0.15em] leading-relaxed text-gray-800 font-light italic">
-              pioggia, vento, <br />
+              E forse pioggia, vento, <br />
               silenzio della sera.
             </p>
           </div>
 
           <div className="mt-64 border-t pt-10 text-[11px] text-gray-400 uppercase tracking-widest">
-            Daniele Raineri — Frammenti
+            Daniele Raineri — 
           </div>
         </main>
       </div>
