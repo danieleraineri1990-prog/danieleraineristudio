@@ -7,6 +7,9 @@ export default function Home() {
   const titleRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
 
+  // Funzione per invertire lo stato (apri/chiudi)
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   useEffect(() => {
     gsap.fromTo(
       titleRef.current,
@@ -27,7 +30,7 @@ export default function Home() {
         {/* HEADER FISSO IN ALTO */}
         <header className="sticky top-0 z-50 py-4 flex items-center justify-between pointer-events-none -ml-8 md:-ml-10">
           
-          {/* Titolo NERO - visibile e sulla sinistra */}
+          {/* Titolo NERO */}
           <h1 
             ref={titleRef} 
             className="text-xl md:text-2xl uppercase tracking-[0.1em] [word-spacing:-0.2em] font-light bg-transparent mix-blend-difference text-black whitespace-nowrap pointer-events-auto"
@@ -35,26 +38,33 @@ export default function Home() {
             <Link href="/">DANIELE RAINERI STUDIO</Link>
           </h1>
 
-          {/* Menu Hamburger Grigio - Sulla stessa linea a DESTRA */}
-          <div 
-            className="pointer-events-auto relative"
-            onMouseEnter={() => setIsOpen(true)}
-            onMouseLeave={() => setIsOpen(false)}
-          >
-            {/* Le 3 Linee Grigie parallele al nome */}
-            <button className="flex flex-col gap-1.5 py-4 pl-10 outline-none group">
-              <div className="w-6 h-[1px] bg-gray-400 group-hover:bg-black transition-colors"></div>
-              <div className="w-6 h-[1px] bg-gray-400 group-hover:bg-black transition-colors"></div>
-              <div className="w-6 h-[1px] bg-gray-400 group-hover:bg-black transition-colors"></div>
+          {/* Menu Hamburger Grigio - CLICCABILE */}
+          <div className="pointer-events-auto relative">
+            {/* Le 3 Linee Grigie - Ora attivano il toggle al click */}
+            <button 
+              onClick={toggleMenu}
+              className="flex flex-col gap-1.5 py-4 pl-10 outline-none group cursor-pointer"
+            >
+              <div className={`w-6 h-[1px] bg-gray-400 group-hover:bg-black transition-all ${isOpen ? 'rotate-45 translate-y-[7px]' : ''}`}></div>
+              <div className={`w-6 h-[1px] bg-gray-400 group-hover:bg-black transition-opacity ${isOpen ? 'opacity-0' : ''}`}></div>
+              <div className={`w-6 h-[1px] bg-gray-400 group-hover:bg-black transition-all ${isOpen ? '-rotate-45 -translate-y-[7px]' : ''}`}></div>
             </button>
             
-            {/* Voci Menu GRANDI, STAMPATELLO, GRIGIO SCURO */}
+            {/* Voci Menu - Spariscono se clicchi di nuovo */}
             {isOpen && (
-              <div className="absolute top-full right-0 mt-2 flex flex-col items-end space-y-2 pt-4 animate-in fade-in duration-300">
-                <Link href="/disegni" className="text-5xl md:text-7xl uppercase tracking-tighter font-light text-gray-700 hover:text-black transition-colors">
+              <div className="absolute top-full right-0 mt-2 flex flex-col items-end space-y-2 pt-4 animate-in fade-in slide-in-from-top-1 duration-300">
+                <Link 
+                  href="/disegni" 
+                  className="text-5xl md:text-7xl uppercase tracking-tighter font-light text-gray-700 hover:text-black transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
                   DISEGNI
                 </Link>
-                <Link href="/poetry" className="text-5xl md:text-7xl uppercase tracking-tighter font-light text-gray-700 hover:text-black transition-colors">
+                <Link 
+                  href="/poetry" 
+                  className="text-5xl md:text-7xl uppercase tracking-tighter font-light text-gray-700 hover:text-black transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
                   POETRY
                 </Link>
               </div>
@@ -67,7 +77,7 @@ export default function Home() {
           <span className="pointer-events-auto">SERIES: INTRECCI</span>
         </div>
 
-        {/* --- CORPO DEL SITO (TUTTE LE TUE OPERE) --- */}
+        {/* --- CORPO DEL SITO (OPERE) --- */}
         <div className="mt-20 mb-40">
           <img src="/images/1.JPG" alt="INTRECCIO NO.3" className="w-full h-auto" />
           <div className="mt-4">
@@ -194,7 +204,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* --- BIOGRAFIA E CONTATTI --- */}
+        {/* --- BIO E CONTATTI --- */}
         <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-700 font-light tracking-wide">
           <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
           <p className="mb-4">Dal vegetale, con innesti e ramificazioni, si identifica un senso del ricrescere.</p>
