@@ -19,7 +19,6 @@ export default function Home() {
       <div className="max-w-4xl mx-auto">
 
 <>
-  {/* TITOLO IN ALTO A SINISTRA */}
   <h1 
     ref={titleRef} 
     className="sticky top-0 z-50 py-4 text-xl md:text-2xl uppercase tracking-[0.1em] [word-spacing:-0.2em] font-light bg-transparent pointer-events-none mix-blend-difference text-white whitespace-nowrap -ml-8 md:-ml-10"
@@ -27,13 +26,11 @@ export default function Home() {
     <span className="pointer-events-auto">DANIELE RAINERI STUDIO</span>
   </h1>
 
-  {/* SERIE IN BASSO A DESTRA */}
-  <div className="fixed bottom-10 right -2 md:right-0 z-50 uppercase text-base md:text-xl tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none text-right">
+  <div className="fixed bottom-10 right-0 z-50 uppercase text-base md:text-xl tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none">
     <span className="pointer-events-auto">SERIES: INTRECCI</span>
   </div>
 </>
 
-            {/* --- SEZIONE IMMAGINI --- */}
 <div className="mt-20 mb-40">
   <img 
     src="/images/1.JPG" 
@@ -47,7 +44,6 @@ export default function Home() {
   </div>
 </div>
 
-       {/* --- SECONDA OPERA (INTRECCIO NO.8) --- */}
         <div className="mt-40 mb-40">
           <img 
             src="/images/2.JPG" 
@@ -60,7 +56,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-
 
         <div className="mt-12 text-[13px] leading-relaxed max-w-xl italic">
           <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
