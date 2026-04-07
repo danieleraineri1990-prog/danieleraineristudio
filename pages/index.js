@@ -1,9 +1,11 @@
 import Head from "next/head";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import Link from "next/link";
 
 export default function Home() {
   const titleRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     gsap.fromTo(
@@ -15,248 +17,183 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-black p-10">
-     <Head>
-  <title>DANIELE RAINERI STUDIO</title>
-  <meta name="google-site-verification" content="m6HHKQMhVsaU59B2WftQbjoKLC3qFuhA0cJGvdL7j2w" />
-</Head>
+      <Head>
+        <title>DANIELE RAINERI STUDIO</title>
+        <meta name="google-site-verification" content="m6HHKQMhVsaU59B2WftQbjoKLC3qFuhA0cJGvdL7j2w" />
+      </Head>
 
       <div className="max-w-4xl mx-auto">
+        
+        {/* HEADER FISSO A SINISTRA */}
+        <header className="sticky top-0 z-50 py-4 flex flex-col items-start pointer-events-none">
+          
+          {/* Titolo */}
+          <h1 
+            ref={titleRef} 
+            className="text-xl md:text-2xl uppercase tracking-[0.1em] [word-spacing:-0.2em] font-light bg-transparent mix-blend-difference text-white whitespace-nowrap -ml-8 md:-ml-10 pointer-events-auto"
+          >
+            <Link href="/">DANIELE RAINERI STUDIO</Link>
+          </h1>
 
-<>
-  <h1 
-    ref={titleRef} 
-    className="sticky top-0 z-50 py-4 text-xl md:text-2xl uppercase tracking-[0.1em] [word-spacing:-0.2em] font-light bg-transparent pointer-events-none mix-blend-difference text-white whitespace-nowrap -ml-8 md:-ml-10"
-  >
-    <span className="pointer-events-auto">DANIELE RAINERI STUDIO</span>
-  </h1>
+          {/* Menu a 3 linee grigie */}
+          <div 
+            className="pointer-events-auto mt-2 -ml-8 md:-ml-10 relative"
+            onMouseEnter={() => setIsOpen(true)}
+            onMouseLeave={() => setIsOpen(false)}
+          >
+            <button className="flex flex-col gap-1.5 py-4 pr-10 outline-none group">
+              <div className="w-6 h-[1px] bg-gray-400 group-hover:bg-white transition-colors"></div>
+              <div className="w-6 h-[1px] bg-gray-400 group-hover:bg-white transition-colors"></div>
+              <div className="w-6 h-[1px] bg-gray-400 group-hover:bg-white transition-colors"></div>
+            </button>
+            
+            {/* Voci del menu che appaiono al passaggio */}
+            {isOpen && (
+              <div className="flex flex-col items-start space-y-3 pt-2">
+                <Link href="/disegni" className="text-[12px] uppercase tracking-[0.2em] font-light mix-blend-difference text-white hover:opacity-50 transition-opacity">
+                  disegni
+                </Link>
+                <Link href="/poetry" className="text-[12px] uppercase tracking-[0.2em] font-light mix-blend-difference text-white hover:opacity-50 transition-opacity">
+                  poetry
+                </Link>
+              </div>
+            )}
+          </div>
+        </header>
 
-  <div className="fixed bottom-4 right-0 z-50 uppercase text-base md:text-xl tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none">
-    <span className="pointer-events-auto">SERIES: INTRECCI</span>
-  </div>
-</>
+        {/* Info fissa in basso a destra */}
+        <div className="fixed bottom-4 right-0 z-50 uppercase text-base md:text-xl tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none px-10">
+          <span className="pointer-events-auto">SERIES: INTRECCI</span>
+        </div>
 
-<div className="mt-20 mb-40">
-  <img 
-    src="/images/1.JPG" 
-    alt="INTRECCIO NO.3" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-      INTRECCIO NO.3 — Oil 150x200
-    </p>
-  </div>
-</div>
+        {/* TUTTE LE TUE OPERE (Corpo del testo originale) */}
+        <div className="mt-20 mb-40">
+          <img src="/images/1.JPG" alt="INTRECCIO NO.3" className="w-full h-auto" />
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.3 — Oil 150x200</p>
+          </div>
+        </div>
 
         <div className="mt-40 mb-40">
-          <img 
-            src="/images/2.JPG" 
-            alt="INTRECCIO NO.8" 
-            className="w-full h-auto" 
-          />
+          <img src="/images/2.JPG" alt="INTRECCIO NO.8" className="w-full h-auto" />
           <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-              INTRECCIO NO.8 — Oil 100x150
-            </p>
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.8 — Oil 100x150</p>
           </div>
         </div>
-               <div className="mb-40">
-          <img 
-            src="/images/33.JPG" 
-            alt="INTRECCIO NO.30" 
-            className="w-full h-auto" 
-          />
+
+        <div className="mb-40">
+          <img src="/images/33.JPG" alt="INTRECCIO NO.30" className="w-full h-auto" />
           <div className="mt-6">
-           <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-              INTRECCIO NO.30 — Oil 210x220
-            </p>
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.30 — Oil 210x220</p>
           </div>
         </div>
-              <div className="mb-40">
-  <img 
-    src="/images/4.JPG" 
-    alt="INTRECCIO NO.5" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-      INTRECCIO NO.5 — Oil/Acrylic 70x140
-    </p>
-  </div>
-</div>
-       <div className="mt-40 mb-40">
-          <img 
-            src="/images/5.JPG" 
-            alt="INTRECCIO NO.1" 
-            className="w-full h-auto" 
-          />
+
+        <div className="mb-40">
+          <img src="/images/4.JPG" alt="INTRECCIO NO.5" className="w-full h-auto" />
           <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-              INTRECCIO NO.1 — Oil on linen 150x200
-            </p>
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.5 — Oil/Acrylic 70x140</p>
           </div>
         </div>
-               <div className="mt-40 mb-40">
-          <img 
-            src="/images/7.JPG" 
-            alt="INTRECCIO NO.11" 
-            className="w-full h-auto" 
-          />
+
+        <div className="mt-40 mb-40">
+          <img src="/images/5.JPG" alt="INTRECCIO NO.1" className="w-full h-auto" />
           <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-              INTRECCIO NO.11 — Acrylic 100x170
-            </p>
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.1 — Oil on linen 150x200</p>
           </div>
         </div>
-               <div className="mt-40 mb-40">
-          <img 
-            src="/images/14.jpg" 
-            alt="INTRECCIO NO.14" 
-            className="w-full h-auto" 
-          />
+
+        <div className="mt-40 mb-40">
+          <img src="/images/7.JPG" alt="INTRECCIO NO.11" className="w-full h-auto" />
           <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-              INTRECCIO NO.14 — Acrylic 70x100
-            </p>
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.11 — Acrylic 100x170</p>
           </div>
         </div>
-               <div className="mt-40 mb-40">
-          <img 
-            src="/images/66.JPG" 
-            alt="INTRECCIO NO.4" 
-            className="w-full h-auto" 
-          />
+
+        <div className="mt-40 mb-40">
+          <img src="/images/14.jpg" alt="INTRECCIO NO.14" className="w-full h-auto" />
           <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-              INTRECCIO NO.4 — Charcoal on linen 150x200
-            </p>
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.14 — Acrylic 70x100</p>
           </div>
         </div>
-               <div className="mt-40 mb-40">
-          <img 
-            src="/images/9.jpg" 
-            alt="INTRECCIO NO.7" 
-            className="w-full h-auto" 
-          />
+
+        <div className="mt-40 mb-40">
+          <img src="/images/66.JPG" alt="INTRECCIO NO.4" className="w-full h-auto" />
           <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-              INTRECCIO NO.7 — Oil 100x170
-            </p>
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.4 — Charcoal on linen 150x200</p>
           </div>
         </div>
-              <div className="mt-40 mb-40">
-          <img 
-            src="/images/8.jpg" 
-            alt="RAMIFICAZIONE NO.1" 
-            className="w-full h-auto" 
-          />
+
+        <div className="mt-40 mb-40">
+          <img src="/images/9.jpg" alt="INTRECCIO NO.7" className="w-full h-auto" />
           <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-              RAMIFICAZIONE NO.1 — Oil 50X150
-            </p>
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.7 — Oil 100x170</p>
           </div>
         </div>
-              <div className="mt-40 mb-40">
-          <img 
-            src="/images/11.jpg" 
-            alt="INTRECCIO NO.9" 
-            className="w-full h-auto" 
-          />
+
+        <div className="mt-40 mb-40">
+          <img src="/images/8.jpg" alt="RAMIFICAZIONE NO.1" className="w-full h-auto" />
           <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-              INTRECCIO NO.9 — Oil 60x120
-            </p>
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">RAMIFICAZIONE NO.1 — Oil 50X150</p>
           </div>
         </div>
-              <div className="mt-20 mb-40">
-  <img 
-    src="/images/12.jpg" 
-    alt="INTRECCIO NO.8" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-      INTRECCIO NO.8 — Oil on linen 150x150
-    </p>
-  </div>
-</div>
-      
-<div className="mt-20 mb-40">
-  <img 
-    src="/images/17.JPG" 
-    alt="INTRECCIO NO.6" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-      INTRECCIO NO.6 — Oil on linen 50x70
-    </p>
-  </div>
-</div>
-      <div className="mt-20 mb-40">
-  <img 
-    src="/images/25.JPG" 
-    alt="INTRECCIO NO.15" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-      INTRECCIO NO.15 — Acrylic 120x160
-    </p>
-  </div>
-</div>
+
+        <div className="mt-40 mb-40">
+          <img src="/images/11.jpg" alt="INTRECCIO NO.9" className="w-full h-auto" />
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.9 — Oil 60x120</p>
+          </div>
+        </div>
+
         <div className="mt-20 mb-40">
-  <img 
-    src="/images/20.JPG" 
-    alt="INTRECCIO NO.15" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-      INTRECCIO NO.13 — Oil 80x120
-    </p>
-  </div>
-</div>
-       <div className="mt-20 mb-40">
-  <img 
-    src="/images/24.JPG" 
-    alt="INTRECCIO NO.34" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-      INTRECCIO NO.34 — Oil 100x170
-    </p>
-  </div>
-</div>
-      <div className="mt-20 mb-40">
-  <img 
-    src="/images/21.JPG" 
-    alt="INTRECCIO NO.17" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-      INTRECCIO NO.17 — Oil 80x120
-    </p>
-  </div>
-</div>
-      <div className="mt-20 mb-40">
-  <img 
-    src="/images/22.jpg" 
-    alt="INTRECCIO NO.16" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-      INTRECCIO NO.16 — Acrylic 120x160
-    </p>
-  </div>
-</div>
+          <img src="/images/12.jpg" alt="INTRECCIO NO.8" className="w-full h-auto" />
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.8 — Oil on linen 150x150</p>
+          </div>
+        </div>
 
-      
+        <div className="mt-20 mb-40">
+          <img src="/images/17.JPG" alt="INTRECCIO NO.6" className="w-full h-auto" />
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.6 — Oil on linen 50x70</p>
+          </div>
+        </div>
 
+        <div className="mt-20 mb-40">
+          <img src="/images/25.JPG" alt="INTRECCIO NO.15" className="w-full h-auto" />
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.15 — Acrylic 120x160</p>
+          </div>
+        </div>
 
+        <div className="mt-20 mb-40">
+          <img src="/images/20.JPG" alt="INTRECCIO NO.13" className="w-full h-auto" />
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.13 — Oil 80x120</p>
+          </div>
+        </div>
+
+        <div className="mt-20 mb-40">
+          <img src="/images/24.JPG" alt="INTRECCIO NO.34" className="w-full h-auto" />
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.34 — Oil 100x170</p>
+          </div>
+        </div>
+
+        <div className="mt-20 mb-40">
+          <img src="/images/21.JPG" alt="INTRECCIO NO.17" className="w-full h-auto" />
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.17 — Oil 80x120</p>
+          </div>
+        </div>
+
+        <div className="mt-20 mb-40">
+          <img src="/images/22.jpg" alt="INTRECCIO NO.16" className="w-full h-auto" />
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.16 — Acrylic 120x160</p>
+          </div>
+        </div>
+
+        {/* Biografia e Mostre */}
         <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-700 font-light tracking-wide">
           <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
           <p className="mb-4">Dal vegetale, con innesti e ramificazioni, si identifica un senso del ricrescere.</p>
@@ -287,4 +224,4 @@ export default function Home() {
       </div>
     </div>
   );
-} 
+}
