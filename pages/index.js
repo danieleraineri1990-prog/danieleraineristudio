@@ -66,12 +66,12 @@ export default function Home() {
             alt="INTRECCIO NO.30" 
             className="w-full h-auto" 
           />
-         
-             <div className="mt-4">
-  <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
-    INTRECCIO NO.30 — Oil 210x220
-  </p>
-</div>
+          <div className="mt-6">
+            <p className="text-[12px] tracking-[0.1em] text-gray-800 font-normal italic">
+              INTRECCIO NO.30 — Oil 210x220
+            </p>
+          </div>
+        </div>
 
 
         <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-700 font-light tracking-wide">
