@@ -18,7 +18,9 @@ export default function Poetry() {
           </Link>
         </header>
 
-        <main className="mt-40">
+        <main className="mt-40 mb-60">
+          
+          {/* PRIMA POESIA */}
           <div className="max-w-md">
             <p className="text-[13px] md:text-[15px] tracking-[0.25em] leading-[2.8] text-gray-700 uppercase">
               Scriverò una poesia <br />
@@ -26,13 +28,38 @@ export default function Poetry() {
               buttando giù alcune righe <br />
               mi ricorderò di te.
             </p>
-          </div>
-
-          <div className="mt-32">
-            <p className="text-[10px] uppercase tracking-[0.2em] font-extralight text-gray-700">
+            <p className="mt-8 text-[10px] uppercase tracking-[0.2em] font-extralight text-gray-700">
               7 aprile 26 - di sera
             </p>
           </div>
+
+          {/* LINEA DIVISORIA */}
+          <hr className="my-32 border-0 h-[1px] bg-gray-200 w-20" />
+
+          {/* SECONDA POESIA */}
+          <div className="max-w-md">
+            <p className="text-[13px] md:text-[15px] tracking-[0.25em] leading-[2.8] text-gray-700 uppercase">
+              Io non so chi sei <br />
+              e tu non conosci me <br />
+              ma vorrei darti gli occhi miei <br />
+              per farti vedere ciò che vedo io <br />
+              <br />
+              non tutto è colorato e, <br />
+              qualche volta, <br />
+              di buio io mi nutro. <br />
+              <br />
+              ma se tu andassi via, <br />
+              io lo capirei <br />
+              perché altro non so fare, <br />
+              - che vivere così.
+            </p>
+            
+            {/* DATA SECONDA POESIA */}
+            <p className="mt-12 text-[10px] uppercase tracking-[0.2em] font-extralight text-gray-700">
+              scritta in estate, 2025
+            </p>
+          </div>
+
         </main>
       </div>
     </div>
