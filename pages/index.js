@@ -93,14 +93,11 @@ export default function Home() {
     className="w-full h-auto" 
   />
   <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
+    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light text-black">
       INTRECCIO 1 — Oil on linen 150x200
     </p>
   </div>
-       </div>
-              <div className="mb-40">
-
-
+</div>
 
         <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-700 font-light tracking-wide">
           <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
