@@ -60,6 +60,19 @@ export default function Home() {
             </p>
           </div>
         </div>
+              <div className="mb-40">
+  <img 
+    src="/images/33.JPG" 
+    alt="INTRECCIO NO.30" 
+    className="w-full h-auto" 
+  />
+  <div className="mt-6">
+    <p className="text-[12px] tracking-[0.1em] text-gray-800 font-normal italic">
+      INTRECCIO NO.30 — Oil 210x220
+    </p>
+  </div>
+</div>
+
 
         <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-700 font-light tracking-wide">
           <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
