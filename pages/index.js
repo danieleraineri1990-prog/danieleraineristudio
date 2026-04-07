@@ -37,9 +37,9 @@ export default function Home() {
     alt="INTRECCIO NO.3" 
     className="w-full h-auto" 
   />
-  <div className="mt-6">
-    <p className="font-mono text-[13px] leading-relaxed italic text-black">
-      INTRECCIO NO.3 — Oil on canvas 150x200x4 — 2026
+  <div className="mt-4">
+    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
+      INTRECCIO NO.3 — Oil 150x200
     </p>
   </div>
 </div>
@@ -50,37 +50,37 @@ export default function Home() {
             alt="INTRECCIO NO.8" 
             className="w-full h-auto" 
           />
-          <div className="mt-6">
-            <p className="font-mono text-[13px] leading-relaxed italic text-black">
-              INTRECCIO NO.8 — Oil on linen 100x150 — 2026
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
+              INTRECCIO NO.8 — Oil 100x150
             </p>
           </div>
         </div>
 
-        <div className="mt-12 text-[13px] leading-relaxed max-w-xl italic">
+        <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-400 font-light tracking-wide">
           <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
           <p className="mb-4">Dal vegetale, con innesti e ramificazioni, si identifica un senso del ricrescere.</p>
           <p className="mb-10">A volte la sua pittura ricorda degli abbracci.</p>
         </div>
 
         <div className="mt-20">
-          <h2 className="text-[11px] uppercase tracking-widest border-b pb-2 text-gray-400 font-normal">Premi</h2>
+          <h2 className="text-[10px] uppercase tracking-widest border-b pb-2 text-gray-300 font-light">Premi</h2>
           <div className="mt-5">
-            <p className="text-lg uppercase font-bold tracking-widest">PREMI: COLLECTIVE EXIBITION</p>
-            <p className="text-[13px] text-gray-700 mt-2">Venice pavilion – Biennale The milk of dreams – Vincitore primo premio artefici del nostro tempo</p>
+            <p className="text-[11px] uppercase tracking-widest text-gray-400 font-light">COLLECTIVE EXHIBITION</p>
+            <p className="text-[11px] text-gray-400 mt-2 font-light">Venice pavilion – Biennale The milk of dreams – Vincitore primo premio artefici del nostro tempo</p>
           </div>
         </div>
 
         <div className="mt-20">
-          <h2 className="text-[11px] uppercase tracking-widest border-b pb-2 text-gray-400 font-normal">Solo Shows</h2>
-          <div className="mt-5 text-[12px] text-gray-600">
+          <h2 className="text-[10px] uppercase tracking-widest border-b pb-2 text-gray-300 font-light">Solo Shows</h2>
+          <div className="mt-5 text-[11px] text-gray-400 font-light">
             <p>Afnakafna gallery 2019 – Moongloow – Roma</p>
             <p className="mt-2">Le nicchie gallery 2021 – Taranto</p>
           </div>
         </div>
 
-        <div className="mt-24 border-t pt-10 text-[13px]">
-          <h2 className="text-[11px] uppercase tracking-widest text-gray-400 mb-4 font-normal">Contact</h2>
+        <div className="mt-24 border-t pt-10 text-[11px] text-gray-400 font-light">
+          <h2 className="text-[10px] uppercase tracking-widest text-gray-300 mb-4 font-light">Contact</h2>
           <p>Email: danieleraineri1990@gmail.com</p>
           <p className="mt-1">Instagram: @danieleraineristudio</p>
         </div>
