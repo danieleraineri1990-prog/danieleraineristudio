@@ -84,20 +84,7 @@ export default function Home() {
     </p>
   </div>
 </div>
-<div className="mb-40">
-  
-<div className="mb-40">
-  <img 
-    src="/images/5.JPG" 
-    alt="INTRECCIO 1" 
-    className="w-full h-auto" 
-  />
-  <div className="mt-4">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light text-black">
-      INTRECCIO 1 — Oil on linen 150x200
-    </p>
-  </div>
-</div>
+
 
         <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-700 font-light tracking-wide">
           <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
@@ -129,4 +116,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
+} 
