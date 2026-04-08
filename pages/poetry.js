@@ -25,7 +25,7 @@ export default function Poetry() {
             <p className="text-[13px] md:text-[15px] tracking-[0.25em] leading-[2.8] text-gray-700 uppercase">
               Scriverò una poesia <br />
               ma non oggi forse domani <br />
-              buttando giù alcune righe <br />
+              e buttando giù alcune righe <br />
               mi ricorderò di te.
             </p>
             <p className="mt-8 text-[10px] uppercase tracking-[0.2em] font-extralight text-gray-700">
