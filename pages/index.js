@@ -243,7 +243,7 @@ export default function Home() {
         {/* --- BIO E CONTATTI --- */}
         <div className="mt-12 text-[11px] leading-relaxed max-w-xl text-gray-700 font-light tracking-wide">
           <p className="mb-4">Avanza una ricerca in pittura che indaga cos&apos;è un corpo quando la sua identità ha smesso di reggere.</p>
-          <p className="mb-4">Dal vegetale, con innesti e ramificazioni, si identifica un senso del ricrescere.</p>
+          <p className="mb-4">Dal vegetale, il corpo ha smesso di essere forma ed è diventato territorio; con innesti e ramificazioni, si identifica un senso del ricrescere.</p>
           <p className="mb-10">A volte la sua pittura ricorda degli abbracci.</p>
         </div>
 
