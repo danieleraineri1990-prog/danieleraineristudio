@@ -72,7 +72,7 @@ export default function Home() {
           </div>
         </header>
 
-      {/* Info fissa in basso a destra - Nera e proporzionata al titolo */}
+      {/* Info fissa totalmente a destra - Nera e proporzionata al titolo */}
 <div className="fixed bottom-10 right-0 z-50 pointer-events-none pr-4 md:pr-10 text-right w-full">
   <span className="pointer-events-auto block w-full uppercase text-[16px] md:text-[20px] tracking-[0.2em] font-light text-black">
     SERIES: INTRECCI
