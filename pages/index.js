@@ -101,7 +101,7 @@ export default function Home() {
           </div>
         </div>
         
-        
+         {/* INTRECCIO NO.1 - Ingrandito a tutto schermo su mobile */}
           <div className="mt-40 mb-40">
           <img src="/images/5.JPG" alt="INTRECCIO NO.1" className="w-full h-auto" />
           <div className="mt-4">
