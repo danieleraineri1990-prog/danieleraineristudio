@@ -33,14 +33,12 @@ export default function Disegni() {
       `}</style>
 
       <div className="max-w-4xl mx-auto relative">
-        {/* HEADER: Tutto su un rigo, nome senza trattini e BACK rosso piccolo */}
+        {/* HEADER: Solo nome dello studio */}
         <header className="py-4 flex items-center justify-between">
           <h1 className="text-sm md:text-xl uppercase tracking-widest font-light text-black leading-tight">
             <Link href="/">DANIELE RAINERI STUDIO</Link>
           </h1>
-          <Link href="/" className="text-red-600 uppercase text-[9px] tracking-[0.2em] font-medium hover:text-red-700 transition-colors">
-            BACK
-          </Link>
+          {/* BACK rimosso come richiesto */}
         </header>
 
         <main className="mt-20">
@@ -72,37 +70,4 @@ export default function Disegni() {
 
             {/* 3D */}
             <div className="group">
-              <img src="/images/3D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
-              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
-            </div>
-
-            {/* 4D */}
-            <div className="group">
-              <img src="/images/4D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
-              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
-            </div>
-
-            {/* 5D */}
-            <div className="group">
-              <img src="/images/5D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
-              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
-            </div>
-
-            {/* 6D */}
-            <div className="group">
-              <img src="/images/6D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
-              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
-            </div>
-
-            {/* 7D */}
-            <div className="group">
-              <img src="/images/7D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
-              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 13X18</p>
-            </div>
-
-          </div>
-        </main>
-      </div>
-    </div>
-  );
-}
+              <img src="/images/3D.JPG" alt="D
