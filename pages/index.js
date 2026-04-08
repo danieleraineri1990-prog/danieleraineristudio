@@ -151,7 +151,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-40 mb-40 -mx-10 md:mx-0">
+       {/* Spostato più a destra su mobile */}
+<div className="mt-40 mb-40 ml-0 -mr-20 md:mx-0">
   <img src="/images/7.JPG" className="w-full h-auto scale-110 md:scale-100" />
   <p className="text-[11px] text-gray-400 mt-4 px-10 md:px-0">INTRECCIO NO.11 — Acrylic 100x170</p>
 </div>
