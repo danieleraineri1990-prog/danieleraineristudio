@@ -32,6 +32,11 @@ export default function Poetry() {
               7 aprile 26 - di sera
             </p>
           </div>
+        </main>
+      </div>
+    </div>
+  );
+}
 
          
 
