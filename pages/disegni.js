@@ -8,6 +8,23 @@ export default function Disegni() {
         <title>DISEGNI | DANIELE RAINERI STUDIO</title>
       </Head>
 
+      {/* STILE PER L'ANIMAZIONE DEL TITOLO */}
+      <style jsx>{`
+        @keyframes titleFade {
+          from { 
+            opacity: 0; 
+            transform: translateY(20px); 
+          }
+          to { 
+            opacity: 1; 
+            transform: translateY(0); 
+          }
+        }
+        .animate-title {
+          animation: titleFade 1.5s ease-out forwards;
+        }
+      `}</style>
+
       <div className="max-w-4xl mx-auto">
         <header className="py-4 flex items-center justify-between -ml-8 md:-ml-10">
           <h1 className="text-xl md:text-2xl uppercase tracking-[0.1em] font-light text-black">
@@ -19,7 +36,10 @@ export default function Disegni() {
         </header>
 
         <main className="mt-20">
-          <h2 className="text-5xl md:text-7xl uppercase tracking-tighter font-light text-gray-700 mb-20">DISEGNI</h2>
+          {/* TITOLO ANIMATO */}
+          <h2 className="text-5xl md:text-7xl uppercase tracking-tighter font-light text-black mb-20 animate-title">
+            Disegni
+          </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20 mb-40">
             
