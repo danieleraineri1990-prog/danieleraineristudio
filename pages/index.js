@@ -112,6 +112,14 @@ export default function Home() {
             <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.1 — Oil on linen 150x200</p>
           </div>
         </div>
+          
+          <div className="mt-40 mb-40">
+          <img src="/images/3.jpg" alt="TRACCIA NO.1" className="w-full h-auto" />
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">TRACCIA NO.1 — CARTA 13x18</p>
+          </div>
+        </div>
+
 
         <div className="mt-40 mb-40">
           <img src="/images/7.JPG" alt="INTRECCIO NO.11" className="w-full h-auto" />
