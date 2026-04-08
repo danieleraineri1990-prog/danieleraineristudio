@@ -137,12 +137,19 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mb-40">
-          <img src="/images/33.JPG" alt="INTRECCIO NO.30" className="w-full h-auto" />
-          <div className="mt-6">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.30 — Oil 210x220</p>
-          </div>
-        </div>
+{/* INTRECCIO NO.30 - Ingrandito a tutto schermo su mobile */}
+<div className="mb-40 -mx-10 md:mx-0">
+  <img 
+    src="/images/33.JPG" 
+    alt="INTRECCIO NO.30" 
+    className="w-full h-auto" 
+  />
+  <div className="mt-6 px-10 md:px-0">
+    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light uppercase">
+      INTRECCIO NO.30 — Oil 210x220
+    </p>
+  </div>
+</div>
 
           <div className="mt-20 mb-40">
           <img src="/images/444.jpg" alt="TRACCIA NO.4" className="w-full h-auto" />
