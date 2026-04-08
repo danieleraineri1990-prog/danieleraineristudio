@@ -286,7 +286,7 @@ export default function Home() {
   />
   <div className="mt-4 px-10 md:px-0">
     <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light uppercase">
-      INTRECCIO NO.17 — Oil 80x120
+      INTRECCIO NO.17 — Acrylic 100x150
     </p>
   </div>
 </div>
