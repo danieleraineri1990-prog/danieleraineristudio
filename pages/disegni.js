@@ -8,20 +8,23 @@ export default function Disegni() {
         <title>DISEGNI | DANIELE RAINERI STUDIO</title>
       </Head>
 
-      {/* STILE PER L'ANIMAZIONE DEL TITOLO */}
-      <style jsx>{`
-        @keyframes titleFade {
-          from { 
-            opacity: 0; 
-            transform: translateY(20px); 
-          }
-          to { 
-            opacity: 1; 
-            transform: translateY(0); 
-          }
+      {/* STILI PER LE ANIMAZIONI */}
+      <style jsx global>{`
+        @keyframes titleFadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes subtitleFadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
         }
         .animate-title {
-          animation: titleFade 1.5s ease-out forwards;
+          animation: titleFadeIn 1.2s ease-out forwards;
+        }
+        .animate-subtitle {
+          opacity: 0; /* Parte invisibile */
+          animation: subtitleFadeIn 1.5s ease-out forwards;
+          animation-delay: 0.8s; /* Inizia dopo il titolo */
         }
       `}</style>
 
@@ -36,10 +39,15 @@ export default function Disegni() {
         </header>
 
         <main className="mt-20">
-          {/* TITOLO ANIMATO */}
-          <h2 className="text-5xl md:text-7xl uppercase tracking-tighter font-light text-black mb-20 animate-title">
-            Disegni
-          </h2>
+          {/* AREA TITOLO RIDOTTO E SOTTOTITOLO ANIMATO */}
+          <div className="mb-20">
+            <h2 className="text-4xl md:text-5xl uppercase tracking-tighter font-light text-black animate-title">
+              Disegni
+            </h2>
+            <p className="mt-2 text-xs uppercase tracking-[0.3em] font-extralight text-gray-500 animate-subtitle">
+              produzione 2026
+            </p>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20 mb-40">
             
