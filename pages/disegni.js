@@ -26,7 +26,7 @@ export default function Disegni() {
             {/* --- DISEGNO 1d.jpg --- */}
             <div className="group">
               <img 
-                src="/disegni/1d.jpg" 
+                src="/disegni/1D.JPG" 
                 alt="Daniele Raineri Studio" 
                 className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
               />
@@ -38,7 +38,7 @@ export default function Disegni() {
             {/* --- DISEGNO 2d.JPG --- */}
             <div className="group">
               <img 
-                src="/disegni/2d.jpg" 
+                src="/disegni/2D.JPG" 
                 alt="Daniele Raineri Studio" 
                 className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
               />
@@ -50,7 +50,7 @@ export default function Disegni() {
             {/* --- DISEGNO 3d.JPG --- */}
             <div className="group">
               <img 
-                src="/disegni/3d.jpg" 
+                src="/disegni/3D.JPG" 
                 alt="Daniele Raineri Studio" 
                 className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
               />
