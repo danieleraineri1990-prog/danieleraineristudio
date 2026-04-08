@@ -72,10 +72,12 @@ export default function Home() {
           </div>
         </header>
 
-        {/* Info fissa in basso a destra */}
-        <div className="fixed bottom-4 right -0 z-50 uppercase text-base md:text-xl tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none px-10">
-          <span className="pointer-events-auto">SERIES: INTRECCI</span>
-        </div>
+       {/* Info fissa in basso a destra - Agganciata al bordo */}
+<div className="fixed bottom-6 right-0 z-50 pointer-events-none pr-4 md:pr-10 text-right w-full">
+  <span className="pointer-events-auto block w-full uppercase text-[12px] md:text-xl tracking-[0.2em] font-light mix-blend-difference text-white">
+    SERIES: INTRECCI
+  </span>
+</div>
 
         {/* --- CORPO DEL SITO (OPERE) --- */}
         <div className="mt-20 mb-40">
