@@ -26,8 +26,8 @@ export default function Disegni() {
             {/* --- DISEGNO 1D.JPG --- */}
             <div className="group">
               <img 
-                src="/images/1d.JPG" 
-                alt="Daniele Raineri Studio" 
+                src="/images/1D.JPG" 
+                alt="Daniele Raineri Studio - Disegno 1" 
                 className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
               />
               <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">
@@ -35,23 +35,11 @@ export default function Disegni() {
               </p>
             </div>
 
-            {/* --- DISEGNO 33.JPG --- */}
+            {/* --- DISEGNO 2D.JPG --- */}
             <div className="group">
               <img 
-                src="/images/33.JPG" 
-                alt="Daniele Raineri Studio" 
-                className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
-              />
-              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">
-                CARTA 21x29
-              </p>
-            </div>
-
-            {/* --- DISEGNO 333.jpg --- */}
-            <div className="group">
-              <img 
-                src="/images/333.jpg" 
-                alt="Daniele Raineri Studio" 
+                src="/images/2D.JPG" 
+                alt="Daniele Raineri Studio - Disegno 2" 
                 className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
               />
               <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">
