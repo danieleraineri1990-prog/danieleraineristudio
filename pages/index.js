@@ -145,7 +145,7 @@ export default function Home() {
           <div className="mt-20 mb-40">
           <img src="/images/666.jpg" alt="TRACCIA NO.5" className="w-full h-auto" />
           <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">TRACCIA NO.5 — Policarbonato/Carta 21x29</p>
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">TRACCIA NO.5 —Carta 21x27</p>
           </div>
         </div>
 
