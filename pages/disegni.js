@@ -33,23 +33,20 @@ export default function Disegni() {
       `}</style>
 
       <div className="max-w-4xl mx-auto relative">
-        {/* HEADER AGGIORNATO */}
-        <header className="py-4 flex items-end justify-between border-b border-gray-50 mb-10">
-          {/* NOME: Più grande e imponente */}
-          <h1 className="text-xl md:text-3xl uppercase tracking-widest font-light text-black leading-none">
+        {/* HEADER: Tutto su un rigo, nome senza trattini e BACK rosso piccolo */}
+        <header className="py-4 flex items-center justify-between">
+          <h1 className="text-sm md:text-xl uppercase tracking-widest font-light text-black leading-tight">
             <Link href="/">DANIELE RAINERI STUDIO</Link>
           </h1>
-          {/* BACK: Più piccolo, rosso e abbassato con 'translate-y' */}
-          <Link href="/" className="text-red-600 uppercase text-[8px] tracking-[0.2em] font-medium hover:text-red-700 transition-colors transform translate-y-1">
+          <Link href="/" className="text-red-600 uppercase text-[9px] tracking-[0.2em] font-medium hover:text-red-700 transition-colors">
             BACK
           </Link>
         </header>
 
-        <main className="mt-16">
-          {/* AREA TITOLO RIDOTTA CHÉ SCORRE VERSO DESTRA */}
+        <main className="mt-20">
+          {/* TITOLO E FRASE ANIMATA CHÉ SCORRE VERSO DESTRA */}
           <div className="mb-20 overflow-hidden relative">
-            {/* 'Disegni' ora è più piccolo dell'header */}
-            <h2 className="text-3xl md:text-4xl uppercase tracking-tighter font-light text-black animate-title">
+            <h2 className="text-4xl md:text-5xl uppercase tracking-tighter font-light text-black animate-title">
               Disegni
             </h2>
             <div className="relative w-full h-6">
