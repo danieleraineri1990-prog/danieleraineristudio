@@ -74,7 +74,7 @@ export default function Home() {
 
  {/* Info fissa - Totalmente a destra e più in basso */}
 <div className="fixed bottom-4 right-0 z-50 pointer-events-none pr-0 text-right w-full">
-  <span className="pointer-events-auto block w-full uppercase text-[16px] md:text-[20px] tracking-[0.2em] font-medium text-black">
+  <span className="pointer-events-auto block w-full uppercase text-[16px] md:text-[20px] tracking-[0.2em] font-bold text-black">
     SERIES: INTRECCI
   </span>
 </div>
