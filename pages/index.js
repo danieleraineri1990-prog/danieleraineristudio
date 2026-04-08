@@ -72,11 +72,14 @@ export default function Home() {
           </div>
         </header>
 
-{/* Info fissa - Totalmente a destra e più in basso, font SPESSO ma SLANCIATO */}
+{/* Info fissa - Totalmente a destra e più in basso */}
 <div className="fixed bottom-4 right-0 z-50 pointer-events-none pr-0 text-right w-full">
   <span 
-    className="pointer-events-auto block w-full uppercase text-[16px] md:text-[20px] tracking-[0.1em] text-black"
-    style={{ fontWeight: '600', fontStretch: 'condensed', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}
+    className="pointer-events-auto block w-full uppercase text-[16px] md:text-[20px] tracking-[0.2em] font-light text-black"
+    style={{ 
+      WebkitTextStroke: '0.6px black',
+      letterSpacing: '0.15em'
+    }}
   >
     SERIES: INTRECCI
   </span>
