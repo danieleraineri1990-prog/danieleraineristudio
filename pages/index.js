@@ -140,7 +140,7 @@ export default function Home() {
         <div className="mt-40 mb-40">
           <img src="/images/2.JPG" alt="INTRECCIO NO.8" className="w-full h-auto" />
           <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.8 — Oil 100x150</p>
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.8 — Oil on linen  100x150</p>
           </div>
         </div>
 
