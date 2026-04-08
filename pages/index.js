@@ -151,12 +151,19 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-40 mb-40">
-          <img src="/images/7.JPG" alt="INTRECCIO NO.11" className="w-full h-auto" />
-          <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.11 — Acrylic 100x170</p>
-          </div>
-        </div>
+        {/* Blocco specifico per INTRECCIO NO.11 */}
+<div className="mt-40 mb-40 overflow-hidden">
+  <img 
+    src="/images/7.JPG" 
+    alt="INTRECCIO NO.11" 
+    className="w-[150%] max-w-none ml-[-25%] md:w-full md:ml-0 h-auto" 
+  />
+  <div className="mt-4">
+    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light uppercase">
+      INTRECCIO NO.11 — Acrylic 100x170
+    </p>
+  </div>
+</div>
 
         <div className="mt-40 mb-40">
           <img src="/images/14.jpg" alt="INTRECCIO NO.14" className="w-full h-auto" />
