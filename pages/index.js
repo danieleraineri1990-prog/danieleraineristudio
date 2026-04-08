@@ -312,16 +312,16 @@ export default function Home() {
           </div>
         </div>
 
-       {/* INTRECCIO NO.17 - Ingrandito a tutto schermo su mobile */}
+       {/* INTRECCIO NO.13 - Ingrandito a tutto schermo su mobile */}
 <div className="mt-20 mb-40 -mx-10 md:mx-0">
   <img 
-    src="/images/21.JPG" 
-    alt="INTRECCIO NO.17" 
+    src="/images/15.JPG" 
+    alt="INTRECCIO NO.13" 
     className="w-full h-auto" 
   />
   <div className="mt-4 px-10 md:px-0">
     <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light uppercase">
-      INTRECCIO NO.17 — Acrylic 100x150
+      INTRECCIO NO.17 — Acrylic 100x170
     </p>
   </div>
 </div>
