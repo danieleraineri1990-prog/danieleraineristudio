@@ -94,12 +94,19 @@ export default function Home() {
   </div>
 </div>
          
-          <div className="mt-20 mb-40">
-          <img src="/images/3.jpg" alt="TRACCIA NO.1" className="w-full h-auto" />
-          <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">TRACCIA NO.1 — Carta 13x18</p>
-          </div>
-        </div>
+          {/* TRACCIA NO.1 - Ingrandita a tutto schermo su mobile */}
+<div className="mt-20 mb-40 -mx-10 md:mx-0">
+  <img 
+    src="/images/3.jpg" 
+    alt="TRACCIA NO.1" 
+    className="w-full h-auto" 
+  />
+  <div className="mt-4 px-10 md:px-0">
+    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light uppercase">
+      TRACCIA NO.1 — Carta 13x18
+    </p>
+  </div>
+</div>
         
         
         {/* INTRECCIO NO.1 - Ingrandito a tutto schermo su mobile */}
