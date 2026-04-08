@@ -33,16 +33,15 @@ export default function Disegni() {
       `}</style>
 
       <div className="max-w-4xl mx-auto relative">
-        {/* HEADER: Solo nome dello studio */}
-        <header className="py-4 flex items-center justify-between">
+        {/* HEADER: Solo nome, senza Link BACK */}
+        <header className="py-4 flex items-center">
           <h1 className="text-sm md:text-xl uppercase tracking-widest font-light text-black leading-tight">
             <Link href="/">DANIELE RAINERI STUDIO</Link>
           </h1>
-          {/* BACK rimosso come richiesto */}
         </header>
 
         <main className="mt-20">
-          {/* TITOLO E FRASE ANIMATA CHÉ SCORRE VERSO DESTRA */}
+          {/* TITOLO E FRASE ANIMATA */}
           <div className="mb-20 overflow-hidden relative">
             <h2 className="text-4xl md:text-5xl uppercase tracking-tighter font-light text-black animate-title">
               Disegni
@@ -70,4 +69,23 @@ export default function Disegni() {
 
             {/* 3D */}
             <div className="group">
-              <img src="/images/3D.JPG" alt="D
+              <img src="/images/3D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
+              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
+            </div>
+
+            {/* 4D */}
+            <div className="group">
+              <img src="/images/4D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
+              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
+            </div>
+
+            {/* 5D */}
+            <div className="group">
+              <img src="/images/5D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
+              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
+            </div>
+
+            {/* 6D */}
+            <div className="group">
+              <img src="/images/6D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
+              <p className="mt-4 text
