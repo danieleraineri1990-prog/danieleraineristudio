@@ -23,28 +23,46 @@ export default function Disegni() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20 mb-40">
             
-            {/* --- DISEGNO 1D.JPG --- */}
+            {/* 1D */}
             <div className="group">
-              <img 
-                src="/images/1D.JPG" 
-                alt="Daniele Raineri Studio - Disegno 1" 
-                className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
-              />
-              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">
-                CARTA 21x29
-              </p>
+              <img src="/images/1D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
+              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
             </div>
 
-            {/* --- DISEGNO 2D.JPG --- */}
+            {/* 2D */}
             <div className="group">
-              <img 
-                src="/images/2D.JPG" 
-                alt="Daniele Raineri Studio - Disegno 2" 
-                className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
-              />
-              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">
-                CARTA 21x29
-              </p>
+              <img src="/images/2D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
+              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
+            </div>
+
+            {/* 3D */}
+            <div className="group">
+              <img src="/images/3D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
+              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
+            </div>
+
+            {/* 4D */}
+            <div className="group">
+              <img src="/images/4D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
+              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
+            </div>
+
+            {/* 5D */}
+            <div className="group">
+              <img src="/images/5D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
+              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
+            </div>
+
+            {/* 6D */}
+            <div className="group">
+              <img src="/images/6D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
+              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
+            </div>
+
+            {/* 7D */}
+            <div className="group">
+              <img src="/images/7D.JPG" alt="Daniele Raineri Studio" className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" />
+              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">CARTA 21x29</p>
             </div>
 
           </div>
