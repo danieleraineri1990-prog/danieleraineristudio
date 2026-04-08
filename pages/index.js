@@ -340,13 +340,14 @@ export default function Home() {
           <p className="mb-10">A volte la sua pittura ricorda degli abbracci.</p>
         </div>
 
-        <div className="mt-20">
-          <h2 className="text-[10px] uppercase tracking-widest border-b pb-2 text-gray-700 font-light">Premi</h2>
-          <div className="mt-5">
-            <p className="text-[11px] uppercase tracking-widest text-gray-800 font-light">COLLECTIVE EXHIBITION</p>
-            <p className="text-[11px] text-gray-800 mt-2 font-light">Venice pavilion – Biennale The milk of dreams – Vincitore primo premio artefici del nostro tempo</p>
-          </div>
-        </div>
+       <div className="mt-20">
+  <h2 className="text-[10px] uppercase tracking-widest border-b pb-2 text-gray-700 font-light">Premi</h2>
+  <div className="mt-5">
+    <p className="text-[11px] uppercase tracking-widest text-gray-800 font-light">COLLECTIVE EXHIBITION</p>
+    <p className="text-[11px] text-gray-800 mt-2 font-light">Venice pavilion – Biennale The milk of dreams – Vincitore primo premio artefici del nostro tempo</p>
+    <p className="text-[11px] text-gray-800 mt-2 font-light">2024 Slow afternoon collective – Roma</p>
+  </div>
+</div>
 
         <div className="mt-20">
   <h2 className="text-[10px] uppercase tracking-widest border-b pb-2 text-gray-700 font-light">Solo Shows</h2>
