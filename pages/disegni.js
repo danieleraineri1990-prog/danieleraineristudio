@@ -3,28 +3,32 @@ import Link from "next/link";
 
 export default function Disegni() {
   return (
-    <div className="min-h-screen bg-white text-black p-10">
+    <div className="min-h-screen bg-white text-black p-10 overflow-x-hidden">
       <Head>
         <title>DISEGNI | DANIELE RAINERI STUDIO</title>
       </Head>
 
-      {/* STILI PER LE ANIMAZIONI */}
+      {/* STILI ANIMAZIONI */}
       <style jsx global>{`
-        @keyframes titleFadeIn {
+        @keyframes fadeIn {
           from { opacity: 0; transform: translateY(10px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        @keyframes subtitleFadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
+        @keyframes slideRight {
+          0% { opacity: 0; transform: translateX(0); }
+          20% { opacity: 1; }
+          80% { opacity: 1; }
+          100% { opacity: 0; transform: translateX(100vw); }
         }
         .animate-title {
-          animation: titleFadeIn 1.2s ease-out forwards;
+          animation: fadeIn 1.2s ease-out forwards;
         }
         .animate-subtitle {
-          opacity: 0; /* Parte invisibile */
-          animation: subtitleFadeIn 1.5s ease-out forwards;
-          animation-delay: 0.8s; /* Inizia dopo il titolo */
+          display: inline-block;
+          white-space: nowrap;
+          animation: slideRight 6s linear forwards;
+          animation-delay: 1s;
+          opacity: 0;
         }
       `}</style>
 
@@ -39,14 +43,16 @@ export default function Disegni() {
         </header>
 
         <main className="mt-20">
-          {/* AREA TITOLO RIDOTTO E SOTTOTITOLO ANIMATO */}
+          {/* TITOLO E FRASE ANIMATA */}
           <div className="mb-20">
             <h2 className="text-4xl md:text-5xl uppercase tracking-tighter font-light text-black animate-title">
               Disegni
             </h2>
-            <p className="mt-2 text-xs uppercase tracking-[0.3em] font-extralight text-gray-500 animate-subtitle">
-              produzione 2026
-            </p>
+            <div className="overflow-visible">
+              <p className="mt-2 text-[10px] uppercase tracking-[0.3em] font-extralight text-gray-400 animate-subtitle">
+                produzione 2026
+              </p>
+            </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20 mb-40">
