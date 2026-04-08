@@ -138,9 +138,9 @@ export default function Home() {
 </div>
 
         <div className="mt-40 mb-40">
-          <img src="/images/2.JPG" alt="INTRECCIO NO.8" className="w-full h-auto" />
+          <img src="/images/2.JPG" alt="INTRECCIO NO.2" className="w-full h-auto" />
           <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.8 — Oil on linen  100x150</p>
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.2 — Oil on linen  100x150</p>
           </div>
         </div>
 
@@ -275,6 +275,21 @@ export default function Home() {
             <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">INTRECCIO NO.6 — Oil on linen 50x70</p>
           </div>
         </div>
+    
+{/* INTRECCIO NO.17 - Ingrandito a tutto schermo su mobile */}
+<div className="mt-20 mb-40 -mx-10 md:mx-0">
+  <img 
+    src="/images/21.JPG" 
+    alt="INTRECCIO NO.17" 
+    className="w-full h-auto" 
+  />
+  <div className="mt-4 px-10 md:px-0">
+    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light uppercase">
+      INTRECCIO NO.17 — Acrylic 100x150
+    </p>
+  </div>
+</div>
+
 
         <div className="mt-20 mb-40">
           <img src="/images/25.JPG" alt="INTRECCIO NO.15" className="w-full h-auto" />
