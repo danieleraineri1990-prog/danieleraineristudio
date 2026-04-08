@@ -23,10 +23,10 @@ export default function Disegni() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20 mb-40">
             
-            {/* --- DISEGNO 1d.jpg --- */}
+            {/* --- DISEGNO 1D.JPG --- */}
             <div className="group">
               <img 
-                src="/disegni/1D.JPG" 
+                src="/images/1d.JPG" 
                 alt="Daniele Raineri Studio" 
                 className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
               />
@@ -35,10 +35,10 @@ export default function Disegni() {
               </p>
             </div>
 
-            {/* --- DISEGNO 2d.JPG --- */}
+            {/* --- DISEGNO 33.JPG --- */}
             <div className="group">
               <img 
-                src="/disegni/2D.JPG" 
+                src="/images/33.JPG" 
                 alt="Daniele Raineri Studio" 
                 className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
               />
@@ -47,10 +47,10 @@ export default function Disegni() {
               </p>
             </div>
 
-            {/* --- DISEGNO 3d.JPG --- */}
+            {/* --- DISEGNO 333.jpg --- */}
             <div className="group">
               <img 
-                src="/disegni/3D.JPG" 
+                src="/images/333.jpg" 
                 alt="Daniele Raineri Studio" 
                 className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
               />
