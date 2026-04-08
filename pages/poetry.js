@@ -36,32 +36,4 @@ export default function Poetry() {
           {/* LINEA DIVISORIA */}
           <hr className="my-32 border-0 h-[1px] bg-gray-400 w-1/2" />
 
-          {/* SECONDA POESIA */}
-          <div className="max-w-md">
-            <p className="text-[13px] md:text-[15px] tracking-[0.25em] leading-[2.8] text-gray-700 uppercase">
-              Io non so chi sei <br />
-              e tu non conosci me <br />
-              ma vorrei darti gli occhi miei <br />
-              per farti vedere ciò che vedo io <br />
-              <br />
-              non tutto è colorato e, <br />
-              qualche volta, <br />
-              di buio io mi nutro. <br />
-              <br />
-              ma se tu andassi via, <br />
-              io lo capirei <br />
-              perché altro non so fare, <br />
-              - che vivere così.
-            </p>
-            
-            {/* DATA SECONDA POESIA */}
-            <p className="mt-12 text-[10px] uppercase tracking-[0.2em] font-extralight text-gray-700">
-              scritta in estate, 2025
-            </p>
-          </div>
-
-        </main>
-      </div>
-    </div>
-  );
-}
+         
