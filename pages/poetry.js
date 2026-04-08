@@ -33,7 +33,6 @@ export default function Poetry() {
             </p>
           </div>
 
-          {/* LINEA DIVISORIA */}
-          <hr className="my-32 border-0 h-[1px] bg-gray-400 w-1/2" />
+         
 
          
