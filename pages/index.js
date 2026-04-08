@@ -349,12 +349,13 @@ export default function Home() {
         </div>
 
         <div className="mt-20">
-          <h2 className="text-[10px] uppercase tracking-widest border-b pb-2 text-gray-700 font-light">Solo Shows</h2>
-          <div className="mt-5 text-[11px] text-gray-700 font-light">
-            <p>Afnakafna gallery 2019 – Moongloow – Roma</p>
-            <p className="mt-2">Le nicchie gallery 2021 – Taranto</p>
-          </div>
-        </div>
+  <h2 className="text-[10px] uppercase tracking-widest border-b pb-2 text-gray-700 font-light">Solo Shows</h2>
+  <div className="mt-5 text-[11px] text-gray-700 font-light">
+    <p>Afnakafna gallery 2019 – Moongloow – Roma</p>
+    <p className="mt-2">Le nicchie gallery 2021 – Taranto</p>
+    <p className="mt-2">Artra Gallery 2025 – Temporary collaboration – Milano</p>
+  </div>
+</div>
 
         <div className="mt-24 border-t pt-10 text-[11px] text-gray-700 font-light">
           <h2 className="text-[10px] uppercase tracking-widest text-gray-700 mb-4 font-light">Contact</h2>
