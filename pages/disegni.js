@@ -30,3 +30,16 @@ export default function Disegni() {
     </div>
   );
 }
+
+{/* --- INIZIO DISEGNO 1 --- */}
+    <div className="group">
+      <img 
+        src="/disegni/1d.jpg" 
+        alt="Daniele Raineri Studio" 
+        className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
+      />
+      <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">
+        CARTA 21x29
+      </p>
+    </div>
+    {/* --- FINE DISEGNO 1 --- */}
