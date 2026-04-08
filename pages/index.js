@@ -137,15 +137,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Blocco specifico per far ingrandire INTRECCIO NO.5 su mobile */}
-<div className="mb-40 -mx-6 md:mx-0">
+        {/* INTRECCIO NO.5 - Dimensione Massima su Mobile */}
+<div className="mb-40 -mx-10 md:mx-0">
   <img 
     src="/images/4.JPG" 
     alt="INTRECCIO NO.5" 
-    className="w-full h-auto scale-100 md:scale-100" 
+    className="w-full h-auto" 
   />
-  <div className="mt-4 px-6 md:px-0">
-    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light uppercase">
+  <div className="mt-4 px-10 md:px-0">
+    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light">
       INTRECCIO NO.5 — Oil/Acrylic 70x140
     </p>
   </div>
