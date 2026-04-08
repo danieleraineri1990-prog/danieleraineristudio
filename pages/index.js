@@ -73,7 +73,7 @@ export default function Home() {
         </header>
 
         {/* Info fissa in basso a destra */}
-        <div className="fixed bottom-4 right-0 z-50 uppercase text-base md:text-xl tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none px-10">
+        <div className="fixed bottom-4 right-2 z-50 uppercase text-base md:text-xl tracking-[0.2em] font-light mix-blend-difference text-white pointer-events-none px-10">
           <span className="pointer-events-auto">SERIES: INTRECCI</span>
         </div>
 
