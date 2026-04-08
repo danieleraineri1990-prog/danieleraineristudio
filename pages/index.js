@@ -315,7 +315,7 @@ export default function Home() {
        {/* INTRECCIO NO.13 - Ingrandito a tutto schermo su mobile */}
 <div className="mt-20 mb-40 -mx-10 md:mx-0">
   <img 
-    src="/images/15.JPG" 
+    src="/images/15.jpg" 
     alt="INTRECCIO NO.13" 
     className="w-full h-auto" 
   />
