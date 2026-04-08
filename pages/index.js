@@ -72,14 +72,14 @@ export default function Home() {
           </div>
         </header>
 
-{/* Info fissa - Totalmente a destra e più in basso - VERSIONE SLANCIATA */}
+{/* Info fissa - Totalmente a destra, in basso, GRIGIO SCURO E SLANCIATO */}
 <div className="fixed bottom-4 right-0 z-50 pointer-events-none pr-0 text-right w-full">
   <span 
-    className="pointer-events-auto inline-block uppercase text-[16px] md:text-[20px] tracking-[0.2em] font-medium text-black"
+    className="pointer-events-auto inline-block uppercase text-[16px] md:text-[20px] tracking-[0.2em] font-light text-neutral-800"
     style={{ 
-      transform: 'scaleY(1.3) scaleX(0.9)', 
-      transformOrigin: 'right bottom',
-      fontWeight: 'bold'
+      display: 'inline-block',
+      // Spessore artificiale coordinato al grigio scuro
+      textShadow: '0.4px 0 0 #262626, -0.4px 0 0 #262626, 0 0.4px 0 #262626, 0 -0.4px 0 #262626'
     }}
   >
     SERIES: INTRECCI
