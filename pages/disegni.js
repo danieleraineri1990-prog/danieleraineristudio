@@ -21,20 +21,24 @@ export default function Disegni() {
         <main className="mt-20">
           <h2 className="text-5xl md:text-7xl uppercase tracking-tighter font-light text-gray-700 mb-20">DISEGNI</h2>
           
-          {/* Qui aggiungerai le tue immagini dei disegni seguendo lo schema della index */}
-          <div className="mb-40 italic text-gray-400 font-light">
-            Sezione in fase di allestimento...
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20 mb-40">
+            
+            {/* --- DISEGNO 1 --- */}
+            <div className="group">
+              <img 
+                src="/images/1d.jpg" 
+                alt="Daniele Raineri Studio" 
+                className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
+              />
+              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-gray-400 font-light">
+                CARTA 21x29
+              </p>
+            </div>
+            {/* --- FINE DISEGNO 1 --- */}
+
           </div>
         </main>
       </div>
     </div>
   );
 }
-
- <div className="mt-40 mb-40">
-          <img src="/images/1d.jpg" alt="1d" className="w-full h-auto" />
-          <div className="mt-4">
-            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light"> CARTA 21x29 </p>
-          </div>
-        </div>
-
