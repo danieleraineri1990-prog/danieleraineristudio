@@ -31,4 +31,10 @@ export default function Disegni() {
   );
 }
 
+ <div className="mt-40 mb-40">
+          <img src="/images/1d.jpg" alt="1d" className="w-full h-auto" />
+          <div className="mt-4">
+            <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light"> CARTA 21x29 </p>
+          </div>
+        </div>
 
