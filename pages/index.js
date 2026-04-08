@@ -151,9 +151,25 @@ export default function Home() {
           </div>
         </div>
 
-       <div className="mt-40 mb-40 -mx-10 md:mx-0">
-  <img src="/images/7.JPG" className="w-full h-auto scale-110 md:scale-100" />
-  <p className="text-[11px] text-gray-400 mt-4 px-10 md:px-0">INTRECCIO NO.11 — Acrylic 100x170</p>
+        {/* Blocco specifico per INTRECCIO NO.11 - Con suggerimento di rotazione */}
+<div className="mt-40 mb-40">
+  <img 
+    src="/images/7.JPG" 
+    alt="INTRECCIO NO.11" 
+    className="w-full h-auto" 
+  />
+  <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+    <p className="text-[11px] tracking-[0.1em] text-gray-400 font-light uppercase">
+      INTRECCIO NO.11 — Acrylic 100x170
+    </p>
+    {/* Suggerimento rotazione - visibile solo su mobile */}
+    <div className="block md:hidden flex items-center gap-1.5 opacity-60">
+      <svg className="w-3.5 h-3.5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+      </svg>
+      <span className="text-[10px] text-gray-400 font-extralight uppercase tracking-widest">Ruota per ingrandire</span>
+    </div>
+  </div>
 </div>
       
         <div className="mt-40 mb-40">
